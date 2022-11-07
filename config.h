@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "UbuntuMono:pixelsize=20:antialias=true:autohint=true";
+static char *font = "UbuntuMono:pixelsize=17:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
     "Hack Nerd Font:pixelsize=15:antialias=true:autohint=true", // Powerline
@@ -198,8 +198,8 @@ static Shortcut shortcuts[] = {
   { ControlMask,          XK_equal,           zoom,           {.f = +1} },
 	{ ControlMask,          XK_minus,           zoom,           {.f = -1} },
 	{ ControlMask,          XK_0,               zoomreset,      {.f =  0} },
-	{ ControlMask,          XK_y,               clipcopy,       {.i =  0} },
-	{ ControlMask,          XK_v,               clippaste,      {.i =  0} },
+	/* { ControlMask,          XK_y,               clipcopy,       {.i =  0} }, */
+	/* { ControlMask,          XK_v,               clippaste,      {.i =  0} }, */
 	{ ShiftMask,            XK_Insert,          selpaste,       {.i =  0} },
 	{ MODKEY,               XK_Up,              kscrollup,      {.i = 1} },
 	{ MODKEY,               XK_Down,            kscrolldown,    {.i = 1} },
